@@ -20,7 +20,7 @@ const EmailSender = ({ filledPdfs, csvRows }) => {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/status');
+        const res = await axios.get('https://emailsender-te8v.onrender.com/status');
         setStatus(res.data.status === 'OK');
       } catch {
         setStatus(false);
@@ -83,7 +83,7 @@ const EmailSender = ({ filledPdfs, csvRows }) => {
       };
 
       try {
-        await axios.post('http://localhost:8000/send-email', payload);
+        await axios.post('https://emailsender-te8v.onrender.com/send-email', payload);
         setStatusLog((prev) => [...prev, `✅ Email sent to ${item.to}`]);
       } catch (err) {
         console.error(err);

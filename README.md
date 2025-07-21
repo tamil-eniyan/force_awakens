@@ -71,7 +71,7 @@ Open `http://localhost:5173` in your browser.
 
 ## ⚙️ Backend Setup (FastAPI)
 
-Make sure the FastAPI server is running on `http://localhost:8000`.
+Make sure the FastAPI server is running on `https://emailsender-te8v.onrender.com`.
 
 See [backend README](../backend/README.md) for setup instructions.
 
